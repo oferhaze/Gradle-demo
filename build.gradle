@@ -12,7 +12,8 @@
 buildscript {
   repositories {
     maven {
-      url "http://repo.jfrog.org/artifactory/gradle"
+      url "http://10.0.0.168:8081/artifactory/libs-release"
+      //url "http://repo.jfrog.org/artifactory/gradle"
        //url "http://repo-demo:8080/artifactory/gradle"
      // credentials {
 //username = "${artifactory_user}"
@@ -87,7 +88,8 @@ configurations {
 
 artifactory {
   //contextUrl = 'http://repo.jfrog.org/artifactory'
-  contextUrl = 'http://repo-demo:8081/artifactory'
+//  contextUrl = 'http://repo-demo:8081/artifactory'
+contextUrl = 'http://10.0.0.168:8081/artifactory'
   publish {
     repository {
 
